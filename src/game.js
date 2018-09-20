@@ -39,7 +39,7 @@ Game.prototype.render = function() {
     var xx = this.player.pos.x - this.cam.pos.x - mouseX;
     var yy = this.player.pos.y - this.cam.pos.y - mouseY;
 
-    var alpha = Math.atan(xx / yy);
+    var alpha = Math.atan(yy / xx);
 
     this.context.fillStyle = "rgb(200,0,0)";
     ctx.rotate(alpha * Math.PI/180);
